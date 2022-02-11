@@ -1,8 +1,9 @@
 ﻿  pch.cpp
   ChatClient.cpp
   GetHttp.cpp
-E:\library\test1\test3\Main\GetHttp.cpp(95,20): warning C4018: “<”: 有符号/无符号不匹配
+E:\library\test1\test3\Main\GetHttp.cpp(99,20): warning C4018: “<”: 有符号/无符号不匹配
   Main.cpp
   MainDlg.cpp
+  utils.cpp
   正在生成代码...
   Main.vcxproj -> E:\library\test1\Debug\Main.exe

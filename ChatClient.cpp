@@ -135,6 +135,7 @@ void ChatClient::OnClickedBtncon()
 	UpdateData(TRUE);
 	SOCKADDR_IN addrTarget;
 	USES_CONVERSION;
+	// 将输入框 IP 转换为 char*
 	mIP += "\0";
 	IP = T2A(mIP);
 	inet_pton(AF_INET, IP, &addrTarget.sin_addr.S_un.S_addr);

@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  ChatClient.cpp
+  GetHttp.cpp
+E:\library\test1\test3\Main\GetHttp.cpp(99,20): warning C4018: “<”: 有符号/无符号不匹配
+  Main.cpp
+  MainDlg.cpp
+E:\library\test1\test3\Main\MainDlg.cpp(209,5): error C2664: “void httplib::Client::set_default_headers(httplib::Headers)”: 无法将参数 1 从“initializer list”转换为“httplib::Headers”
+E:\library\test1\test3\Main\MainDlg.cpp(211,4): message : 无构造函数可以接受源类型，或构造函数重载决策不明确
+E:\library\test1\test3\Main\httplib.h(8058,21): message : 参见“httplib::Client::set_default_headers”的声明

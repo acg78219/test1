@@ -33,4 +33,8 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnClickedBtnstart();
+	CString mPasswd;
+	CEdit mEditPasswd;
+	CEdit mEditUser;
+	CString mUser;
 };

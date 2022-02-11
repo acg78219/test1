@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "GetHttp.h"
+#include <vector>
 using namespace std;
 
 typedef struct MacIp
@@ -84,7 +85,10 @@ BOOL GetLocoalIPandMac(vector<MacIp>& macip)
     return bNetReady;
 }
 
-CString MyMac;
+GetHttp::GetHttp() :mac(_T(""))
+{
+
+}
 void GetHttp::GetMac()
 {
 	//获取IP 和MAC 地址
@@ -94,7 +98,8 @@ void GetHttp::GetMac()
 
 	for (int x = 0; x < v.size(); x++)
 	{
-		MyMac = v[x].mac;
+        mac = v[x].mac;
+		//MyMac = v[x].mac;
 	}
 }
 
