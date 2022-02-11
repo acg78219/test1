@@ -292,11 +292,14 @@ void CMainDlg::OnClickedBtnstart()
 		char* code = strtok_s(myData.memory, delims, &tokPtr);
 		string tmp = code;
 		string strNum = "";
+
+		// 用一个简单的方法获取数字
 		for (auto ch : tmp) {
 			if (isdigit(ch)) {
 				strNum += ch;
 			}
 		}
+		// 判断 code 数字
 		if (strNum == "0") {
 			this->ShowWindow(SW_HIDE);
 			ChatClient clientDlg;
